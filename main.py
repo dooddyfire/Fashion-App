@@ -2,6 +2,7 @@ from tkinter import *
 
 from tkinter import messagebox 
 
+from tkinter import PhotoImage
 from PIL import ImageTk,Image
 
 # ===== ALL PAGE =============
@@ -31,9 +32,10 @@ def blaze_page():
 
     Label(top2,text="Blazer Look",font=('Aerial 12 bold')).pack()
     
-    canvas = Canvas(top2, width=300, height=300)
-    canvas.pack()
-    canvas.create_image(250,250,image=blaze_img)
+   
+    #canvas = Canvas(top2, width=300, height=300)
+    #canvas.pack()
+    #canvas.create_image(250,250,image=blaze_img)
 
     desc = "เบลเซอร์ คือเสื้อคลุมที่คล้ายกับสูท แต่ต่างกันตรงที่\nเบลเซอร์จะมีความ Casual มากกว่า จึงเป็นไอเทมที่ควรมีติดตู้เสื้อผ้า"
     Label(top2,text=desc,font=('Aerial 12 bold')).pack()
@@ -48,13 +50,13 @@ def y2k_page():
     top3 = Toplevel()
     top3.geometry("700x700")
 
-    blaze_img = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG4.PNG").resize((250,250)) )
+    blaze_img = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG4.PNG") )
 
     Label(top3,text="Y2K Look",font=('Aerial 12 bold')).pack()
     
-    canvas = Canvas(top3, width=300, height=300)
-    canvas.pack()
-    canvas.create_image(250,250,image=blaze_img)
+    #canvas = Canvas(top3, width=300, height=300)
+    #canvas.pack()
+    #canvas.create_image(250,250,image=blaze_img)
 
     desc = "การรวมตัวกันของโทนสีเน้นสีสันสดใส หรือพาสเทลน่ารักๆ\nกับไอเทมที่ทำให้ลุคนี้น่าสนใจ ไม่ว่าจะเป็น กระโปรงหรือกางเกงเอวต่ำที่สวนกระแสเอวสูงไปเมื่อปีที่แล้ว\nหรือว่าจะเป็นเสื้อครอปเอวลอยตัวจิ๋วโชว์เอวเน้นๆ นอกจากนี้ยังมีกระเป๋าถือสุดวินเทจที่บอกเลยว่าเป็นท็อปไอเทมของลุคนี้"
     Label(top3,text=desc,font=('Aerial 12 bold')).pack()
@@ -71,9 +73,9 @@ def headscaff_page():
 
     Label(top4,text="Head Scarf Look",font=('Aerial 12 bold')).pack()
     
-    canvas = Canvas(top4, width=300, height=300)
-    canvas.pack()
-    canvas.create_image(250,250,image=blaze_img)
+    #canvas = Canvas(top4, width=300, height=300)
+    #canvas.pack()
+    #canvas.create_image(250,250,image=blaze_img)
 
     desc = "ลุคที่มาพร้อมกับผ้าโพกผม แฟชั่นเมื่อปี 60s ที่กลับมาฮิตอีกครั้ง โดยเสน่ห์ของลุคนี้คือการนำผ้าต่างๆ\nเช่น ผ้าเช็ดหน้า ผ้าคลุม มาโพกหัว ทำให้ลุคนั้นดูเก๋ขึ้น สามารถจับมาแต่งกับชุดไหนก็ได้หลากหลายแนว\nไม่ว่าจะเป็น ชุดสำหรับไปทะเล หรือวันสบายๆ ก็ดูเก๋ไม่เบา"
     Label(top4,text=desc,font=('Aerial 12 bold')).pack()
