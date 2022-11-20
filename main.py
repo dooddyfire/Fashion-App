@@ -110,7 +110,7 @@ if __name__ == '__main__':
     root.geometry("700x700+0+0")
 
 
-    Label(root,text='Fashion Application').pack(pady=20)
+    Label(root,text='Fashion Application',font=('Aerial 20 bold')).pack(pady=20)
     img1 = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG1.PNG").resize((150,150)))
 
     menu_frame = Frame(root)
