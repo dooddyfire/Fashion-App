@@ -113,20 +113,20 @@ if __name__ == '__main__':
 
 
     Label(root,text='Fashion Application',font=('Aerial 20 bold')).pack(pady=20)
-    img1 = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG1.PNG").resize((150,150)))
+    img1 = ImageTk.PhotoImage(Image.open("assets/1.jpg").resize((150,150)))
 
     menu_frame = Frame(root)
     menu_frame.pack()
     btn = Button(menu_frame,text='Blazer Look',image=img1,compound=TOP,font=('Aerial 12 bold'),command=blaze_page,cursor='hand2')
     btn.pack(side=LEFT,padx=5)
 
-    img2 = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG5.PNG").resize((150,150)))
+    img2 = ImageTk.PhotoImage(Image.open("assets/2.jpg").resize((150,150)))
     btn2 = Button(menu_frame,image=img2,text='Y2K Look',compound=TOP,font=('Aerial 12 bold'),command=y2k_page,cursor='hand2')
     btn2.pack(side=LEFT,padx=5)
 
 
 
-    img3 = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG4.PNG").resize((150,150)))
+    img3 = ImageTk.PhotoImage(Image.open("assets/3.jpg").resize((150,150)))
     btn3 = Button(menu_frame,image=img3,text='Head Scarf Look',compound=TOP,font=('Aerial 12 bold'),command=headscaff_page,cursor='hand2')
     btn3.pack(side=LEFT,padx=5)
 
@@ -134,11 +134,11 @@ if __name__ == '__main__':
     menu_frame2 = Frame(root)
     menu_frame2.pack()
 
-    img4 = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG2.PNG").resize((150,150)))
+    img4 = ImageTk.PhotoImage(Image.open("assets/ref.jpg").resize((150,150)))
     btn4 = Button(menu_frame2,image=img4,text='Reference',compound=TOP,font=('Aerial 12 bold'),command=reference_page,cursor='hand2')
     btn4.pack(side=LEFT,padx=5)
 
-    img5 = ImageTk.PhotoImage(Image.open("assets/NoFont+NoBG6.PNG").resize((150,150)))
+    img5 = ImageTk.PhotoImage(Image.open("assets/exit.jpg").resize((150,150)))
     btn5 = Button(menu_frame2,image=img5,text='Exit Program',compound=TOP,font=('Aerial 12 bold'),command=exit_program,cursor='hand2')
     btn5.pack(side=LEFT,padx=5)
 
